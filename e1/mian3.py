@@ -17,7 +17,7 @@ def translate_text_batch(texts, target_lang="ZH"):
     cleaned_texts = [clean_text(t) for t in texts]
     combined_text = "|||".join(cleaned_texts)
 
-    url = "http://120.204.73.73:8033/api/ai-gateway/v1/chat/completions"
+    url = "/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 1743430591161rKvSr20mz35ew3p2RJMK8Xg"
@@ -128,3 +128,4 @@ if __name__ == "__main__":
     input_image = "data3.png"
     output_image = "translated_image6.jpg"
     translate_image(input_image, output_image)
+
