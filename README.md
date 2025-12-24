@@ -1,6 +1,6 @@
 # pd
 
-基于模型翻译，OCR扫描，算法定位排版实现的微信翻译
+基于模型翻译，OCR扫描，算法定位排版实现的微信翻译 
  
  <img width="749" height="480" alt="image" src="https://github.com/user-attachments/assets/dee11bb2-046d-4e0f-bb86-cecede9ad7d2" />
 
