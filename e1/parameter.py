@@ -16,7 +16,7 @@ def translate_text_batch(texts, target_lang="ZH"):
     cleaned_texts = [clean_text(t) for t in texts]
     combined_text = "|||".join(cleaned_texts)
 
-    url = "http://120.204.73.73:8033/api/ai-gateway/v1/chat/completions"
+    url = "/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 1743430591161rKvSr20mz35ew3p2RJMK8Xg"
@@ -158,3 +158,4 @@ def is_black_white_background(cv_image, black_thresh=60, white_thresh=200, max_n
     non_bw_ratio = non_bw_pixels / total_pixels
 
     return non_bw_ratio <= max_non_bw_ratio
+
